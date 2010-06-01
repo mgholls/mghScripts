@@ -14,7 +14,8 @@ New-Alias -Name ef -Value Edit-File
 function Edit-Profile { Edit-File $cp }
 New-Alias -Name ep -Value Edit-Profile
 
-. "C:\Working\Scripts\DevUtilities.ps1"
+. "C:\Working\GitProjects\mghScripts\DevUtilities.ps1"
 Configure-VisualStudioCommandPrompt
+Copy-Item -Path $cp -Destination 'C:\Working\GitProjects\mghScripts'
 
-pushd C:\Working\Scripts
+pushd C:\Working
