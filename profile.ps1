@@ -1,6 +1,7 @@
-$cp = Join-Path (Split-Path -Parent -Path $PROFILE) 'profile.ps1'
+Import-Module Pscx -arg @{TextEditor = "C:\Program Files (x86)\TextPad 5\TextPad.exe"}
+$MaximumHistoryCount = 500
 
-function Edit-File {
+function Edit-Script {
 
 	param([string]$file)
 	
@@ -8,14 +9,21 @@ function Edit-File {
 	
 	& $editor $file 
 }
+New-Alias -Name es -Value Edit-Script
 
-New-Alias -Name ef -Value Edit-File
-
-function Edit-Profile { Edit-File $cp }
-New-Alias -Name ep -Value Edit-Profile
+function Edit-Profile { Edit-Script $Profile.CurrentUserAllHosts }
+New-Alias -Name mep -Value Edit-Profile
 
 . "C:\Working\GitProjects\mghScripts\DevUtilities.ps1"
 Configure-VisualStudioCommandPrompt
-Copy-Item -Path $cp -Destination 'C:\Working\GitProjects\mghScripts'
+
+function GetFull-Help {
+    param([string]$commandName = $(throw "A command name must be specified"))
+    Get-Help -Full -Name $commandName | more
+}
+
+New-Alias -Name gfh GetFull-Help
+
+Copy-Item -Path $Profile.CurrentUserAllHosts -Destination 'C:\Working\GitProjects\mghScripts'
 
 pushd C:\Working
