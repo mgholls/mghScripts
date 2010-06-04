@@ -24,6 +24,6 @@ function GetFull-Help {
 
 New-Alias -Name gfh GetFull-Help
 
-Copy-Item -Path $Profile.CurrentUserAllHosts -Destination 'C:\Working\GitProjects\mghScripts'
+Copy-Item -Path $Profile.CurrentUserAllHosts -Destination (Join-Path 'C:\Working\GitProjects\mghScripts' "CurrentUserAllHosts.profile.ps1")
 
 pushd C:\Working
