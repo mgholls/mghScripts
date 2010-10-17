@@ -1,4 +1,3 @@
-Set-PSDebug -Strict
 Import-Module Pscx -arg @{TextEditor = "C:\Program Files (x86)\TextPad 5\TextPad.exe"}
 $MaximumHistoryCount = 500
 
@@ -48,3 +47,9 @@ function Add-Note {
 New-Alias -Name an -Value Add-Note
 
 pushd C:\Working
+
+function Open-VisualStudio {
+    & "C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe"
+}
+
+New-Alias -Name ovs -Value Open-VisualStudio
