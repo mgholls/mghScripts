@@ -105,6 +105,12 @@ GUID={9BE0E37D-F2FF-4EC2-8E62-96F6547F24E0}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
+[doldstaging]
+Filename="\\CESQLSTGSYD01\C$\CommunityEngine"
+GUID={91A49624-360F-42BF-B0CC-7584D06B9C8C}
+StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
 [dos]
 Filename="%comspec%"
 Notes="Start a command prompt"
@@ -113,14 +119,32 @@ StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
 [drelease]
-Filename="\\CETFSSYD01\Release"
+Filename="\\CETFSSYD02\Release"
 GUID={72EA2ACF-F29F-4D1C-B8CC-30EB6B9EE410}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
+[dreleaseold]
+Filename="\\CETFSSYD01\Release"
+GUID={2EAB09DB-D52D-4186-86D8-06D94015F686}
+StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
+[dsoftware]
+Filename="\\cevmhsyd04\install"
+GUID={4B135AF2-1BBB-4BBF-9626-E19B9BF8D32C}
+StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
 [dstaging]
-Filename="\\CESQLSTGSYD01\C$\CommunityEngine"
-GUID={91A49624-360F-42BF-B0CC-7584D06B9C8C}
+Filename="\\cestgsyd01\D\CommunityEngine"
+GUID={FA893549-AC67-480F-9D5A-65BA68D53100}
+StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
+[dvication]
+Filename="\\Cevmhsyd03\community engine\PROJECTS\ALP VICTORIA\04 DESIGN\ALP_VIC_Action_websites\sign_off_action_site"
+GUID={30552804-C49E-4C78-BBDD-246498CD7650}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
@@ -221,12 +245,6 @@ GUID={4EE9B3B0-BCA6-4A14-BDF7-42222E32280A}
 StartMode=3
 UseRunAs=0
 Disable32BitRedir=0
-[inetmanager]
-Filename="C:\Windows\System32\inetsrv\InetMgr.exe"
-GUID={388F35FB-879C-4A48-965C-D553D1BBC017}
-StartMode=5
-UseRunAs=0
-Disable32BitRedir=-1
 [kdevguide]
 Filename=""C:\Program Files (x86)\KenticoCMS\5.0\Documentation\KenticoCMS_DevGuide.chm""
 GUID={DB978D03-18CE-45C6-83C3-00B2D02938CD}
@@ -293,7 +311,7 @@ StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
 [mvcinaction]
-Filename="C:\Users\martin.hollingsworth\Desktop\eBook\ASP.NETMVC2inAction.pdf"
+Filename="C:\WorkingLow\eBook\ASP.NETMVC2inAction.pdf"
 GUID={55566FCB-38A4-4993-8E11-0BFE4C427360}
 StartMode=5
 UseRunAs=0
@@ -319,8 +337,8 @@ StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
 [pie]
-Filename=""c:\Program Files\Internet Explorer\iexplore.exe""
-Params="-private"
+Filename="iexplore"
+Params="-private "
 GUID={BCEABE31-7903-4B4C-9C7E-8AA8D8897223}
 StartMode=3
 UseRunAs=0
@@ -333,7 +351,7 @@ StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
 [psinaction]
-Filename=""C:\Users\martin.hollingsworth\Desktop\eBook\WindowsPowerShellinAction,SecondEdition.pdf""
+Filename="c:\WorkingLow\eBook\WindowsPowerShellinAction,SecondEdition.pdf"
 GUID={11BC513F-8F7D-48E2-89EC-3D3D6797AA7A}
 StartMode=5
 UseRunAs=0
@@ -358,7 +376,7 @@ GUID={C7AF3518-5C7A-43A8-9EE4-6DDC0390AC94}
 StartMode=3
 UseRunAs=0
 Disable32BitRedir=0
-[sdev]
+[sfdev]
 Filename="iexplore"
 Params="http://global.alp.dev.communityengine.com/"
 GUID={931603D5-D626-4E86-B396-48CF8082FE1F}
@@ -369,6 +387,20 @@ Disable32BitRedir=0
 Filename="iexplore"
 Params="http://global.alp.int.communityengine.com/"
 GUID={F3977A02-BCDB-41B1-B2DA-25B2B46D2642}
+StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
+[sfprod]
+Filename="iexplore"
+Params="http://alp.org.au/"
+GUID={E18B024E-29AC-45DB-B84C-6854BFE90725}
+StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
+[sfstaging]
+Filename="iexplore"
+Params="http://global.alp.staging.communityengine.com/"
+GUID={4691C46B-295A-459E-939A-F51A54A3614D}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
@@ -461,6 +493,12 @@ Disable32BitRedir=0
 [smvaprod]
 Filename="http://action.alpvic.prod.communityengine.com/CMSSiteManager/"
 GUID={0E66686B-10A2-41DE-BC5D-E2B707708EA4}
+StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
+[smvastaging]
+Filename="http://action.alpvic.staging.communityengine.com/CMSSiteManager/"
+GUID={F12642AF-D6F2-415A-A085-4018E459EAF6}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
@@ -563,6 +601,12 @@ GUID={394C08F0-A845-4158-9223-4822E4E68B63}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
+[tfsbuild2010]
+Filename="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\tfsbuildservice2010.exe"
+GUID={5D6FAF21-4B7B-441C-8737-C43AF728074D}
+StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
 [tp]
 Filename="c:\Program Files (x86)\TextPad 5\TextPad.exe"
 Path="C:\Working"
@@ -571,7 +615,7 @@ StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
 [trct]
-Filename="http://trc.timesheetmanager.com/timesheets.php?job=2322&weekending=2010-11-07"
+Filename="http://trc.timesheetmanager.com/timesheets.php?job=2530&weekending=2010-12-19"
 GUID={CD11CD19-CF75-455D-B736-0791D0288D8F}
 StartMode=5
 UseRunAs=0
@@ -580,6 +624,13 @@ Disable32BitRedir=0
 Filename="mstsc.exe"
 Params="/v:CEBLDDEVSYD02"
 GUID={197CDE04-4606-4931-9ABE-D63EEB33660E}
+StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
+[tsos]
+Filename="mstsc.exe"
+Params="/v:CESQLSTGSYD01"
+GUID={7F36FAFB-1076-4A6E-A6E0-630224F42378}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
@@ -592,8 +643,8 @@ UseRunAs=0
 Disable32BitRedir=0
 [tss]
 Filename="mstsc.exe"
-Params="/v:CESQLSTGSYD01"
-GUID={7F36FAFB-1076-4A6E-A6E0-630224F42378}
+Params="/v:cestgsyd01"
+GUID={5855D3AC-99D8-454E-9112-9184082CC210}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
@@ -601,6 +652,13 @@ Disable32BitRedir=0
 Filename="mstsc.exe"
 Params="/v:CETFSSYD01"
 GUID={CEC8E1BD-FA63-4900-9DF3-EA320CB82936}
+StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
+[tstfs]
+Filename="mstsc.exe"
+Params="/v:CETFSSYD02"
+GUID={48872FBE-6503-41B2-90EE-48428E2F08F0}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0

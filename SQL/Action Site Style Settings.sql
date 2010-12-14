@@ -1,8 +1,11 @@
+use [ALP.ActionSiteVIC_DEV]
+-- use [ALP.ActionSite]
+
 update CE_SiteSettings
 set ModuleFontColour = '6A6A6A'
-, BackgroundFontColour = 'FFFFFF'
+, BackgroundFontColour = 'FF0800'
 , BackgroundColour = 'FFFFFF'
-, FontTypeFace = 'Arial'
+, FontTypeFace = 'Verdana'
 , ButtonTopGradientColour = '8D8D8D'
 , ButtonBottomGradientColour = '555555'
 , ModuleTopGradientColour1 = 'FFB502'
@@ -18,7 +21,8 @@ set ModuleFontColour = '6A6A6A'
 , ButtonFontColour = 'FFFFFF'
 , PageBackground = 'FFFFFF'
 , CustomModuleFontColour = '6A6A6A'
-where SiteID in (select siteid from CMS_Site where SiteName = 'mghdev')
+where SiteID in (select siteid from CMS_Site where SiteName = 'mghtest')
 
 select s.SiteName, ss.* from CMS_Site s inner join CE_SiteSettings ss on s.SiteID = ss.SiteID
-where s.SiteName in ('ALPActionDevSite', 'mghdev')
+where s.SiteName in ('ALPActionDevSite', 'peymandev', 'mghdev', 'mghtest')
+

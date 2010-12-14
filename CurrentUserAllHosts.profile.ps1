@@ -41,7 +41,8 @@ function Add-Note {
     if (-not (Test-Path $notesFile)) { New-Item $notesFile -ItemType File }
     
     $timestamp = (Get-Date).ToString('ddd dd/MM/yyy HH:mm:ssz')
-    Out-File -FilePath $notesFile -Append -InputObject "${timestamp}: $args" 
+    Out-File -FilePath $notesFile -Append -InputObject "${timestamp}: $args"
+    Write-Clipboard -Object "${timestamp}: $args" -NoNewLine
 }
 
 New-Alias -Name an -Value Add-Note
